@@ -34,3 +34,4 @@ for m in aprx.listMaps():
 map = aprx.listMaps()[0]
 map.addDataFromPath(output_dir + "\\" + output_name)
 arcpy.AddMessage(output_name + " added to map")
+
