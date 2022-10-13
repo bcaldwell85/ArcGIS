@@ -12,7 +12,7 @@ aprx = arcpy.mp.ArcGISProject("CURRENT")
 lyt = aprx.listLayouts(layoutName)[0]
 mf = lyt.listElements("MAPFRAME_ELEMENT", mapFrame)[0]
 FC = arcpy.management.CreateFeatureclass(output_dir,output_name,'POLYGON',"","DISABLED","DISABLED",coordsys)
-#add field to FC
+#add bookmark name field to FC
 arcpy.management.AddField(FC, "NAME", "TEXT" )
 
 for m in aprx.listMaps():
